@@ -1,6 +1,6 @@
-@import "nullstyle.scss"
+@import "nullstyle.scss";
 
-html {font-family: 'Nunito', sans-serif; color: black; padding: 0 30px; box-sizing: border-box;} //pointer-events:none; }
+html {font-family: 'Nunito', sans-serif; color: black; padding: 0 30px; box-sizing: border-box;}
 
 // <Variables> 
 $white:#fff;
@@ -30,6 +30,7 @@ $screen-l-max: 1199pxx;
 @mixin wrapper() {
 	max-width: 1172px;
 	margin: 0 auto;
+// <Mixins/>
 
 }
 .horizontal-line {border-bottom: 1px solid #ebebeb;}
@@ -48,7 +49,7 @@ $screen-l-max: 1199pxx;
 		}
 		&__right {
 			@include flexcenter();
-			.navbar__lang {margin-right: 15px;}
+			.navbar__lang {margin-right: 1rem;}
 			.navbar__social { a {color: black;} ul {display: flex; .icon {margin: 0 7px}}}
 			.navbar__seo {
 			@include font(16, 700); @include flexcenter();
@@ -241,32 +242,7 @@ $screen-l-max: 1199pxx;
 			'tit tit tit'
 			'item1 item2 item3';
 			grid-gap: 2rem;
-			.feedback__tittle {
-				grid-area: tit;
-				align-items: center;
-				text-align: center;
-				margin-bottom: 30px;
-				h1 {
-					@include fontz('Raleway', 36px, 400);
-					line-height: 43px;
-					color: #212121;
-				}
-				img {
-					margin: 20px 0;
-					width: 64px;
-					height: 2px;
-				}
-				p {
-					@include fontz('Open Sans', 14px, 400);
-				}
-			}
-			.feedback__item-1 {
-				grid-area: item1;
-				.feedback__rewblock {
-				}
-				.feedback__nameblock {
-					@include flexcenter();
-				}
+			
 			grid-template-rows: 1fr;
 			grid-gap: 4rem;
 			grid-template-areas: 'a b c d';
@@ -282,9 +258,9 @@ $screen-l-max: 1199pxx;
 				.tittle {@include font(24,700); line-height: 36px; color: $blue; padding: 10px 0;}
 				.number {@include font(50,700); line-height: 36px; opacity: 0.5; color:#fb5c71;}
 			}
-		}
+		
 	}
-	}
+}
 	.pricing {
 		@include flexcenter();
 		@include wrapper();

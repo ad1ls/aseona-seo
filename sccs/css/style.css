@@ -136,7 +136,7 @@ html {
           align-items: center;
 }
 .wrapper .navbar__right .navbar__lang {
-  margin-right: 15px;
+  margin-right: 1rem;
 }
 .wrapper .navbar__right .navbar__social a {
   color: black;
@@ -606,6 +606,8 @@ html {
 .wrapper .process__blocks {
   display: -ms-grid;
   display: grid;
+      grid-template-areas: "tit tit tit" "item1 item2 item3";
+  grid-gap: 2rem;
   -ms-grid-rows: 1fr;
   grid-template-rows: 1fr;
   grid-gap: 4rem;
